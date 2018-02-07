@@ -443,8 +443,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #fefefe;
-  font-family: "Roboto", Roboto, Arial, sans-serif;
+  background: #f7f7f7;
+  font-family: "Roboto", Roboto;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -2225,9 +2225,9 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Roboto", Roboto;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   color: inherit;
   text-rendering: optimizeLegibility; }
   h1 small, .h1 small,
@@ -3286,15 +3286,15 @@ select {
 
 .card {
   display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-positive: 1;
       flex-grow: 1;
   margin-bottom: 1rem;
   margin-top: 2rem;
-  width: 14rem;
-  border: 0px solid #e6e6e6;
+  width: 17rem;
+  border: 0px solid #ddd;
   border-radius: 0rem;
   background: #fefefe;
 	background: no-repeat top center;
@@ -3303,7 +3303,7 @@ select {
     background-origin: initial;
     background-clip: initial;
     background-color: initial;
-  box-shadow: 0 0 .25rem rgba(72, 72, 72, 0.3);
+  box-shadow: 0 0 0rem rgba(15,150,250, 0.1);
   overflow: hidden;
   height: 14rem;
   color: #0a0a0a; }
@@ -3326,7 +3326,7 @@ select {
   padding: .6rem;
   position: relative;
   top: 11rem;
-  color: #000000;
+  color: #000;
   max-height: 3rem;
   background: rgba(255,255,255, 1)}
   .card-section > :last-child {
@@ -3334,7 +3334,12 @@ select {
 
 .card:hover .card-section{
 	color: #fff;
-	background: rgba(0,0,0,1)
+	background: rgba(15,150,250,1);
+}
+
+
+.card:hover {
+  box-shadow: 0 0 0rem rgba(150,150,150, 0.05);
 }
 
 .card-image {
@@ -5822,7 +5827,3 @@ a.thumbnail {
 
 .long-delay {
   animation-delay: 700ms !important; }
-
-
-
-
