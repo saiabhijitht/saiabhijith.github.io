@@ -443,7 +443,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
+  background: #f7fbff;
   font-family: "Roboto", Roboto;
   font-weight: normal;
   line-height: 1.5;
@@ -3287,28 +3287,26 @@ select {
 .card {
   display: -ms-flexbox;
   display: inline-block;
+  -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
   -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-flex: 1;
   -ms-flex-positive: 1;
       flex-grow: 1;
   margin-bottom: 1rem;
   margin-top: 2rem;
-  width: 17rem;
-  border: 0px solid #ddd;
-  border-radius: 0rem;
+  border: 1px solid #eee;
+  border-radius: 3px;
   background: #fefefe;
-	background: no-repeat top center;
-    background-size: contain;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
   box-shadow: 0 0 0rem rgba(15,150,250, 0.1);
   overflow: hidden;
-  height: 14rem;
+  height: auto;
   color: #0a0a0a; }
   .card > :last-child {
     margin-bottom: 0; }
+
+
 
 .card-divider {
   -ms-flex: 0 1 auto;
@@ -3318,28 +3316,31 @@ select {
   padding: 1rem;
   background: #e6e6e6; }
   .card-divider > :last-child {
-    margin-bottom: 0; }
+    margin-bottom: 0;}
 
 .card-section {
   -ms-flex: 1 0 auto;
       flex: 1 0 auto;
-  padding: .6rem;
-  position: relative;
-  top: 11rem;
-  color: #000;
-  max-height: 3rem;
-  background: rgba(255,255,255, 1)}
-  .card-section > :last-child {
-    margin-bottom: 0; }
+      padding: 0.6rem;
+  }
 
-.card:hover .card-section{
+  .card-section > img{
+    width: 303px;
+    height: auto;
+  }
+  .card-section > :last-child {
+    margin-bottom: 0;
+  }
+
+.card:hover .card-section {
 	color: #fff;
 	background: rgba(15,150,250,1);
 }
 
 
 .card:hover {
-  box-shadow: 0 0 0rem rgba(150,150,150, 0.05);
+  box-shadow: 0 0.5rem 1rem rgba(15,150,250, 0.2);
+  border: 0px solid #aaa;
 }
 
 .card-image {

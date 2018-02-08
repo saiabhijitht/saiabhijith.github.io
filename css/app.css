@@ -23,9 +23,9 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 
@@ -57,13 +57,15 @@
 
 .hover-underline-menu .menu a {
   color: #ffffff;
-  padding: 1.2rem 4rem;
+  padding: 1.2rem 2.5rem;
   font-weight: 300;
+  text-align: center;
 }
 
 
 .hover-underline-menu .menu .underline-from-center {
   position: relative;
+  width: 9.5rem;
 }
 
 
@@ -86,8 +88,8 @@
 }
 
 .hover-underline-menu .menu #activenav .underline-from-center::after {
-  left: 0;
-  right: 0;
+  left: 8%;
+  right: 8%;
 }
 
 /*Section headings*/
@@ -99,23 +101,25 @@
   padding: 20px 0 40px;
 }
 
+
 .section-title{
   font-size: 1.2rem;
   font-weight: 300;
-  background-color: #f7f7f7;
+  background-color: #f7fbff;
   text-align: center;
-  border: 1px solid #ddd;
+  border: 1px solid #aaa;
   margin: 0px 0 0px 30px;
   padding: 8px 30px;
   display: inline-block;
   position: relative;
 }
 
+
 .section:after {
   content: "";
   display: block;
   margin-top: -1.5rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #aaa;
 }
 
 /*back button*/
